@@ -1,7 +1,7 @@
 require 'basics'
 
-describe 'who is the biggest number' do
-  # Hint: 'def who_is_bigger(a, b, c)'
+describe "who_is_bigger" do  
+# Hint: 'def who_is_bigger(a, b, c)'
   it 'tells me the biggest' do
     expect(who_is_bigger(84, 42, nil)).to eq("nil detected")
     expect(who_is_bigger(nil, 42, 21)).to eq("nil detected")
@@ -11,7 +11,7 @@ describe 'who is the biggest number' do
   end
 end
 
-describe 'crazy stuff on strings' do
+describe "crazy_stuff_on_string" do
   # Reverse, upcase then removes all L, T and A.
   # Hint: google ruby string
   it 'does crazy stuff on strings' do
@@ -23,7 +23,6 @@ describe 'crazy stuff on strings' do
       .to eq("NBVCXZ;KJHGFDSPOIUYREWQ")
   end
 end
-
 
 describe '42 finder' do
   # array_42 takes an array as parameter and returns:
@@ -37,9 +36,8 @@ describe '42 finder' do
   end
 end
 
-
 describe 'crazy stuff on arrays' do
-  # The magic_array function takes an array of number or an array of
+  # The magic_array function takes an array of number or an array of 
   # array of number as parameter and return the same array :
   # - flattened (i.e. no more arrays in array)
   # - sorted
@@ -57,3 +55,4 @@ describe 'crazy stuff on arrays' do
       .to eq([2, 4, 14, 16, 64])
   end
 end
+
